@@ -1,0 +1,10 @@
+services:
+  streamlit:
+    container_name: "spam_detector"
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ~/nltk_data:/root/nltk_data  # Mount local NLTK data directory
