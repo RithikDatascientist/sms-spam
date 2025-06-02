@@ -4,6 +4,7 @@ import string
 import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 ps  = PorterStemmer()
 
 # Set the NLTK data path to a directory within your container
